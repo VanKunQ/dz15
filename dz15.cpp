@@ -2,23 +2,28 @@
 #include <iostream>
 
 int main()
-{
- 
-	static int N = 22;
-	for (int x = 0; x < N + 1; x++) 
-	{
 
+{      
+	static int N = 32;
+	for (int x = 1; x < N + 1; x++)
+	{
 		if (x % 2 == 0)
 		{
-			std::cout << x << " ";
+			std::cout << x << " \n";
 		}
-
 		else
 		{
-			std::cout << x;
+			if (x % 2 != 0)
+			{
+				std::cout << x << " ";
+
+			}
+			
 		}
 
 	}
 
 }
+
+
 
